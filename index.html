@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rieyanshi Sharma</title>
+    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+
+</head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+    * {
+        font-family: Poppins, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .bg {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body {
+        background-color: rgb(10, 10, 41);
+        color: rgb(255, 255, 255);
+        height: 100%;
+        font-family: Poppins, sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(0, 0, 33);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: #fa726f;
+        font: 1.07rem Poppins, sans-serif;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 110px 0;
+    }
+
+    .firstSection>div {
+        width: 45%;
+        margin-left: 80px;
+        align-items: center;
+    }
+
+    .leftSection {
+        font-size: 48px;
+    }
+
+    .rightSection img {
+        width: fit-content;
+        border-radius: 10px;
+        /* Adjust the value as per your preference */
+        box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .rightSection:hover img {
+        border-radius: 20px;
+        box-shadow: 0 0 5px cyan, 0 0 35px cyan, 0 0 70px cyan, 0 0 140px cyan;
+        transform: scale(1.1);
+        z-index: 2;
+    }
+
+    .hair {
+        display: block;
+        color: #fa726f;
+    }
+
+    .pink {
+        color: #fa726f;
+    }
+
+    .hey {
+        font-size: 40px;
+    }
+
+    #element {
+        color: #fa726f;
+    }
+
+    .secondSection {
+        display: flex;
+        margin: 110px 0;
+    }
+
+    .secondrightSection {
+        width: 50%;
+        margin-left: 80px;
+
+        margin-right: 80px;
+        align-items: center;
+        font-size: 32px;
+    }
+
+    .secondrightSection h1 {
+        font-size: 32px;
+    }
+
+    .secondrightSection p {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 2;
+        justify-content: center;
+        text-align: justify;
+    }
+
+
+    .secondleftSection {
+        margin: auto;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .secondleftSection img {
+        width: fit-content;
+        border-radius: 10px;
+        /* Adjust the value as per your preference */
+
+        box-shadow: 3px 3px 20px #012290f7;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .secondleftSection:hover {
+        border-radius: 20px;
+        box-shadow: 0 0 5px cyan, 0 0 35px cyan, 0 0 70px cyan, 0 0 140px cyan;
+        transform: scale(1.1);
+        z-index: 2;
+    }
+
+    .home-sci a:hover {
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0ef;
+    }
+
+    /* CSS for the btn-box class */
+    .btn-box {
+        margin-top: 20px;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: #fa726f;
+        color: wheat;
+        text-decoration: none;
+        border: 2px solid #fa726f;
+        border-radius: 4px;
+        font-size: 25px;
+        margin: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .btn-box:hover {
+        background-color: transparent;
+        /* Transparent background on hover */
+        color: #fa726f;
+        /* Pink text color on hover */
+        box-shadow: 0 0 50px #fa726f;
+        zoom: 110%;
+    }
+
+    .btn-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-radius: 90px;
+    }
+
+    /* Additional CSS for Education section */
+    .container {
+        padding: 90px;
+    }
+
+    .EducationList {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3px;
+    }
+
+    .EducationList>div {
+        background-color: transparent;
+        padding: 40px;
+        font-size: 13px;
+        font-weight: 13px;
+        border-right: 10px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px #012290f7;
+        width: calc(33.33% - 40px);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .EducationList>div:not(:last-child) {
+        margin-right: 40px;
+        /* Add margin between the elements (adjust as needed) */
+    }
+
+    .EducationList>div:hover {
+        box-shadow:
+            0 0 5px rgba(0, 238, 255, 0.5),
+            0 0 10px rgba(0, 238, 255, 0.5),
+            0 0 20px rgba(0, 238, 255, 0.5);
+        transform: translateY(-20px);
+        /* Move the element 5 pixels up on hover */
+    }
+
+    .sub-title {
+        text-align: center;
+    }
+
+    .EducationList div h2 {
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        display: block;
+        font-size: 15px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    p {
+        display: block;
+        font-size: large;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+
+    .sub-title {
+        margin-top: auto;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    /* Add your existing CSS styles here */
+
+    .skillsSection {
+        padding: 50px;
+    }
+
+    .tabs {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .tab-btn {
+        padding: 10px 20px;
+        background-color: #f2f2f2;
+        border: none;
+        font-size: 35px;
+        cursor: pointer;
+        border-right: 10px;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .tab-btn:hover {
+        box-shadow:
+            0 0 10px #fa726f,
+            0 0 10px #fa726f,
+            0 0 10px #fa726f;
+        transform: translateY(-5px);
+    }
+
+    .tab-btn.active {
+        background-color: #fa726f;
+        color: white;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    .ProgressContainer {
+        max-width: 1140px;
+        width: calc(100%, 2 rem);
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+
+    .progress {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.008rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ProgressTitle {
+        color: #fff;
+        padding: 1rem 0;
+        font-size: large;
+    }
+
+    .ProgressBar {
+        position: relative;
+        width: 30rem;
+        height: 9px;
+        border-radius: 2rem;
+        background: rgb(222, 222, 222);
+    }
+
+    @media (max-width:768px) {
+        .ProgressBar {
+            width: 25rem;
+        }
+    }
+
+    @media (max-width:440px) {
+        .ProgressBar {
+            width: 300px;
+        }
+    }
+
+    @media (max-width:340px) {
+        .ProgressBar {
+            width: 280px;
+        }
+    }
+
+    .bar {
+        border-radius: inherit;
+        background: linear-gradient(90deg, #5b4dda, #6546ee, #575afc);
+        position: absolute;
+        transition: width 1.5rem cubic-bezier(0.1, 0.42, 0.85, 1);
+        height: 100%;
+        width: 0%;
+        left: 0;
+    }
+
+    .bar::after {
+        content: attr(data-text);
+        position: absolute;
+        right: 0;
+        top: -3rem;
+        width: 4rem;
+        height: 2rem;
+        background: rgb(41, 61, 102);
+        font-size: 18px;
+        line-height: 2rem;
+        text-align: center;
+        border-radius: 0.1rem;
+        animation: text 0.6s ease-in-out;
+        font-weight: bold;
+    }
+
+    .bar::before {
+        content: "";
+        position: absolute;
+        right: 1rem;
+        top: -1.2rem;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid rgb(41, 61, 102);
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    iframe {
+        width: 447px;
+        height: 355px;
+    }
+
+    .resume {
+        margin-top: 150px;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+
+    .resume h2 {
+        color: white;
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 60px;
+    }
+
+    .resume-view .row iframe {
+        width: 720px;
+        height: 1000px;
+    }
+
+    .resume h2 span {
+        color: #0ef;
+    }
+
+    .certificates {
+        color: #fff;
+        align-items: center;
+
+        margin-left: 2.5%;
+        margin-right: 5%;
+    }
+
+    .certificate-content {
+
+        align-items: center;
+        display: grid;
+        grid-column-gap: 100px;
+        grid-row-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    }
+
+    .leftSection a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        font-size: 60px;
+        color: #0ef;
+        text-decoration: none;
+        transition: 0.5s ease;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+        margin: 30px 20px 30px 0;
+    }
+
+    .leftSection a:hover {
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0ef;
+    }
+
+    .projectsSection,
+    .certificates h2 {
+        color: white;
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <header>
+        <nav>
+            <div class="left">Rieyanshi's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#firstSection">Home</a></li>
+                <li><a href="#secondSection">About</a></li>
+                <li><a href="#EducationSection">Education</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#certificate">Certifications</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--------------------------------HOME SECTION---------------------------------->
+        <section class="firstSection" , id="firstSection">
+            <div class="leftSection">
+                <span class="hey">Hey! My name is </span>
+                <span class="hair">Rieyanshi Sharma</span>
+                <div><span class="hey">and I am a</span></div>
+                <span id="element"></span>
+                <br>
+                <a href="https://www.linkedin.com/in/rieyanshi/" target="_blank" style="--i: 6"><i
+                        class="bx bxl-linkedin-square"></i></a>
+                <a href="https://github.com/Rieyanshi" target="_blank" style="--i: 7"><i class="bx bxl-github"></i></a>
+            </div>
+            <div class="rightSection"><img src="bg.jpg" alt=""></div>
+        </section>
+
+        <!--------------------------------ABOUT SECTION---------------------------------->
+        <section class="secondSection" , id="secondSection">
+            <div class="secondleftSection">
+                <img src="erp.jpg" alt="">
+            </div>
+            <div class="secondrightSection">
+                <h1>About <span class="pink">Me</span></h1>
+                <p class="about-me-content">
+                    I am <span class="pink"><b>Rieyanshi Sharma</b></span>, a driven and enthusiastic <span
+                        class="pink"><b>Computer Science and Engineering 4th Year student </span> </b>graduating in the
+                    year <span class="pink"><b>2024 </b></span>with a passion for creating innovative solutions. Through
+                    internships in<span class="pink"><b> Android Development </b></span> and <span class="pink"> <b>Java
+                            development</b></span> and Certifications in various technical skills, I have honed my
+                    skills in building user-friendly mobile applications and RESTful APIs. My projects showcase my
+                    proficiency in machine learning and web development. Eager to contribute to a reputable
+                    organization's growth, I bring a strong foundation in <span class="pink"><b> data structures,
+                            algorithms, and programming languages</b></span>, combined with a commitment to continuous
+                    learning. <span class="pink"> <b>Let's connect and explore exciting opportunities
+                            together.</b></span>
+                </p>
+                <div class="btn-box-container">
+                    <a href="https://drive.google.com/uc?id=1T5SJGirJkXpkZ7OjyqXP3KVBfB_MgtSJ&export=download"
+                        class="btn-box" download="rieyanshiresume.pdf"
+                        style="margin-right: 180px; margin-bottom: 20px;">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/1T5SJGirJkXpkZ7OjyqXP3KVBfB_MgtSJ/view?usp=sharing"
+                        target="_blank" class="btn-box">View Resume</a>
+                </div>
+            </div>
+
+            <!--------------------------------Education SECTION---------------------------------->
+        </section>
+        <section class="EducationSection" , id="EducationSection">
+            <h1 class="sub-title">Education Details</h1>
+            <div class="education" id="education">
+                <div class="container">
+                    <div class="EducationList">
+                        <div>
+                            <i class="bx bxs-graduation" style="color:#fa726f;; font-size: xxx-large;"></i>
+                            <h2>Bachelor's In Computer Science And Engineering</h2>
+                            <h3>Pranveer Singh Institute of Technology</h3>
+                            <p>2020 - 2024<br>Score : 8.2 cgpa</p>
+                        </div>
+                        <div>
+                            <i class="bx bxs-school" style="color:#fa726f; font-size: xxx-large;"></i>
+                            <h2>Intermediate</h2>
+                            <h3>Girls' High School and College</h3>
+                            <p>2019 - 2020<br>Score : 75.5%</p>
+                        </div>
+                        <div>
+                            <i class="bx bxs-school" style="color:#fa726f;; font-size: xxx-large;"></i>
+                            <h2>Highschool</h2>
+                            <h3>Girls' High School and College</h3>
+                            <p>2017 - 2018<br>Score : 92.2%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------SKILLS SECTION---------------------------------->
+        <section class="skillsSection" id="skillsSection">
+            <h1 class="sub-title">SKILLS</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+                <button class="tab-btn" data-tab="personal">Personal Skills</button>
+            </div>
+            <div class="ProgressContainer">
+                <div class="tab-content active" data-tab="technical">
+                    <div class="progress">
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">JAVA</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">HTML</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">CSS</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">JS</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">ANDROID</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">Spring</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="96" data-text="96"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-tab="personal">
+                    <div class="progress">
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">Creativity</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="90" data-text="90"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">Problem Solving</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="95" data-text="95"></div>
+                            </div>
+                        </div>
+                        <div class="ProgressItem">
+                            <h3 class="ProgressTitle">Communication skills</h3>
+                            <div class="ProgressBar">
+                                <div class="bar" data-value="95" data-text="95"></div>
+                            </div>
+                        </div>
+                        <!-- Add other personal skills here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------------------------------RESUME SECTION---------------------------------->
+        <section class="resume" id="resume">
+            <h2>Resume</h2>
+            <div class="resume-view">
+                <div class="row">
+                    <iframe src="https://drive.google.com/file/d/1T5SJGirJkXpkZ7OjyqXP3KVBfB_MgtSJ/preview"></iframe>
+                </div>
+        </section>
+        <!--------------------------------CERTIFICATIONS SECTION---------------------------------->
+        <section class="certificates">
+            <div class="certificate" id="certificate">
+                <div class="main-text" id="certificate">
+                    <h2>Certificates</h2>
+                    <div class="certificate-content">
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1fOb4Y-ygwITgpnvhxfsywtLd2KD0zv1T/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1KK87TbM3mRzcvzjTFJKdd7E5TxNkwU1t/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/11QOdCZ56JlAU3l1HxZQ09R-jhJcpnckw/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1nK25qoxSUJG07AHosNy0qrLoDuuIadJ0/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1w2msEz87Mjw9YVnAoA-qWoHUzLhYbmhO/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1K51F664AybCoiFCgTJ1Q0OF5cw_avkBk/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1FX1GFPktIKZ53rjnsPsy4hEttEcQGpAE/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1jfu6k_FiARvE_bf03-GHX23eo_4oau_m/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1AowPzXfqp6g2d7dnB6xTFTDjGag9hJpo/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1topwSxCNC1GvtWnaFaYi5hivMZxDYXFc/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1gTQIFMw3tcp0HNt_ena6QK0UgqwsQBvS/preview"
+                                width="100%" height="600px" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1sOo4HpMhrFktE2u-WlvzcBHjYOBOuEIx/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/13SM4c0SLZVk9DMhXF0hVbwCMrBxHuqhW/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1iH1hA2U64-UeqMy_tGwu4Qyehd1w9gID/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/14PcjJsHSiHX1JxH0Ua9NGvKKwGel6HMk/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1768E_BNzU02WKlXI-WFVKilfRzZ_r_1K/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1gxuEiIdXAi4VL8CO_Oe496XXl_Xltf0s/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1zDIxra-HSDBTX99Yz-vRSnGSqZ1U6Gh_/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1vozoTroNk5N0BQC9zHHZLjZ9sDYl-aWa/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+
+                        <!---->
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1ozYb6Hfi-slNzrIWg1TbmUIfLE0Avrde/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                        <div class="row">
+                            <iframe src="https://drive.google.com/file/d/1beUiPs0U2Y8TgUChA9sXvzvWRTXHM3FH/preview"
+                                width="100%" height="100%" style="border: 0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------PROJECTS SECTION---------------------------------->
+        <!-- Projects Section -->
+        <section class="projectsSection">
+            <h2>Projects</h2>
+            <div class="carousel">
+                <!-- Project Card 1 -->
+                <div class="projectCard">
+                    <img src="" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="projectCard">
+                    <img src="" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+
+                <!-- Add more project cards here -->
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-End Developer,', 'Java Developer,', 'Android Developer,', 'Competetive Coder,', '&amp; a Tech Enthusiast.'],
+            typeSpeed: 50,
+            loop: true,
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            function switchTabs(tab) {
+                const tabs = document.querySelectorAll('.tab-btn');
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const tabContent = document.querySelector(`.tab-content[data-tab="${tab.dataset.tab}"]`);
+                const activeTabContent = document.querySelector('.tab-content.active');
+                activeTabContent.classList.remove('active');
+                tabContent.classList.add('active');
+            }
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    switchTabs(tab);
+                });
+            });
+            // Load the initial technical skills on page load
+            switchTabs(document.querySelector('.tab-btn.active'));
+        });
+        window.onload = function () {
+            let bars = document.querySelectorAll('.bar');
+            bars.forEach((progress) => {
+                let value = progress.getAttribute('data-value');
+                progress.style.width = `${value}%`;
+            });
+        };
+
+    </script>
+</body>
+
+</html>
