@@ -191,10 +191,7 @@
 
     .btn-box:hover {
         background-color: transparent;
-        /* Transparent background on hover */
         color: #fa726f;
-        /* Pink text color on hover */
-        box-shadow: 0 0 50px #fa726f;
         zoom: 110%;
     }
 
@@ -496,6 +493,32 @@
         text-align: center;
         margin-bottom: 60px;
     }
+    /* Default styles for larger screens */
+.EducationList {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .EducationList {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .EducationList > div {
+        margin-bottom: 20px;
+    }
+    
+    .EducationList div i {
+        margin-bottom: 10px;
+    }
+    
+    h2, h3, p {
+        text-align: center;
+    }
+}
+
 </style>
 </head>
 
@@ -561,9 +584,8 @@
                         target="_blank" class="btn-box">View Resume</a>
                 </div>
             </div>
-
-            <!--------------------------------Education SECTION---------------------------------->
         </section>
+            <!--------------------------------Education SECTION---------------------------------->
         <section class="EducationSection" , id="EducationSection">
             <h1 class="sub-title">Education Details</h1>
             <div class="education" id="education">
