@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Rieyanshi Sharma</title>
-    <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
 
 </head>
@@ -353,6 +353,8 @@
         font-size: x-large;
         text-align: left;
         margin-left:30px ;
+        color: #f2f2f2;
+        text-decoration: none;
     }
     @media (max-width:768px) {
         .ProgressBar {
@@ -526,8 +528,16 @@
     }
 
     .tumor {
+        
         width: 500px;
         height: 500px;
+    }
+    .tumor:hover{
+        box-shadow:
+            0 0 5px rgba(1, 31, 34, 0.5),
+            0 0 10px black,
+            0 0 20px black;
+        transform: translateY(-5px);
     }
 
     /* Media query for smaller screens */
@@ -882,7 +892,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Front-End Developer,', 'Java Developer,', 'Android Developer,', 'Competetive Coder,', '&amp; a Tech Enthusiast.'],
+            strings: ['Front-End Developer,','React JS Developer', 'Java Developer,', 'Android Developer,', 'Competetive Coder,', '&amp; a Tech Enthusiast.'],
             typeSpeed: 50,
             loop: true,
         });
