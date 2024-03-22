@@ -727,4 +727,60 @@ footer {
 .tabs {
     margin-bottom: 40px; /* Add some space below the tabs */
 }
+section.work2 .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 20px; /* Adjust grid gap as needed */
+}
+
+section.work2 .wrapper2 .portfolio2 .tabs2 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -279px; /* Remove top margin */
+}
+
+section.work2 .wrapper2 .portfolio2 .tabs2 ul li a {
+    color: var(--fade);
+    border-bottom: 1px solid transparent;
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+section.work2 .wrapper2 .portfolio2 .tabs2 ul li a.active {
+    border-color: var(--info);
+    color: var(--info);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.skills__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px; /* Adjust grid gap as needed */
+}
+.skills__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add this to space the columns */
+}
+
+.skill-box {
+    width: 48%; /* Adjust the width as needed to fit two columns */
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .skills__wrapper {
+        flex-direction: column;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+}
 

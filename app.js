@@ -56,80 +56,26 @@ $(document).ready(function(){
     sectionObserver.observe(counterSection);
 })
 $(document).ready(function(){
+    var $wrapper2 = $('.wrapper2');
 
-    // Image filter
-    var $wrapper = $('.portfolio__wrapper');
-
-    // Initialize isotope
-    $wrapper.isotope({
-        filter: '*',
+    $wrapper2.isotope({
+        itemSelector: '.item',
         layoutMode: 'masonry',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear'
+        masonry: {
+            columnWidth: '.item'
         }
     });
+    $('.tabs2 a').click(function(e) {
+        e.preventDefault();
+        var tabType = $(this).data('tab');
+        // Filter items based on the clicked tab
+        $wrapper2.isotope({ filter: '.' + tabType });
 
-    let links = document.querySelectorAll('.tabs a');
-    let items = document.querySelectorAll('.item');
-
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            let tabType = this.dataset.tab;
-
-            if (tabType === 'all') {
-                items.forEach(item => {
-                    item.style.display = "block"; // Show all items
-                });
-            } else {
-                items.forEach(item => {
-                    if ((tabType === 'technical' && item.classList.contains('interpersonal')) ||
-                        (tabType === 'interpersonal' && item.classList.contains('technical'))) {
-                        item.style.display = "none"; // Hide content not related to the clicked tab
-                    } else {
-                        item.style.display = "block"; // Show content related to the clicked tab
-                    }
-                });
-            }
-
-            links.forEach(link => {
-                link.classList.remove('active');
-            });
-
-            this.classList.add('active');
-        });
-    });
-
-    // Magnify pop up
-    $('.magnify').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        },
-        zoom: {
-            enable: true
-        }
-    });
-
-    // Magnify pop up for iframes
-    $('.magnifyIframe').magnificPopup({
-        type: 'iframe',
-        gallery: {
-            enabled: true
-        },
-        zoom: {
-            enable: true
-        }
-    });
-
-    // Slider
-    $('.slider').slick({
-        arrows: false,
-        autoplay: true
+        $('.tabs2 a').removeClass('active');
+        $(this).addClass('active');
     });
 });
+
 $(document).ready(function(){
     // image filter 
 
@@ -188,5 +134,17 @@ $('.magnify').magnificPopup({
     $('.slider').slick({
         arrows: false,
         autoplay: true
+    });
+    
+
+    // Magnify pop up for iframes
+    $('.magnifyIframe').magnificPopup({
+        type: 'iframe',
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enable: true
+        }
     });
 })
