@@ -102,7 +102,7 @@ $(document).ready(function(){
                 filter : selector,
                 layoutMode : 'masonry',
                 animationOptions : {
-                    duration: 750,
+                    duration: 400,
                     easing: 'linear'
                 }
             });
